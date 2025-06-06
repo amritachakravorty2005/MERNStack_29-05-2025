@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Window</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('OfficeBackground.webp') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .login-box {
+      width: 400px;
+      margin: 100px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .checkbox {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .checkbox a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #f0a500;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-box button:hover {
+      background-color: #d48800;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>LOGIN WINDOW</h2>
+    <form>
+      <input type="email" placeholder="Your Email Address" required>
+      <input type="password" placeholder="Your Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" required>
+          Agree With <a href="#">Terms & Condition</a>
+        </label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
